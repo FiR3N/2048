@@ -1,0 +1,39 @@
+:root {
+  /* Основные цвета темы */
+  --bg-dark: #0a0a14;
+  --bg-gray: rgba(38, 47, 52, 0.5);
+  --border: #262f34;
+
+  --box-sd-dark-blue: rgba(0, 217, 255, 0.1);
+
+  --red-button: #f34a4a;
+  --red-button-active: #791414;
+
+  --white-text: #ffffff;
+
+  --tile-2: #00d9ff;
+  --tile-4: #00ff9d;
+  --tile-8: #ff00ff;
+  --tile-16: #ff5500;
+  --tile-32: #ff00aa;
+  --tile-64: #aa00ff;
+  --tile-128: #00ff55;
+  --tile-256: #ffaa00;
+  --tile-512: #ff0055;
+  --tile-1024: #5500ff;
+  --tile-2048: #ff0000;
+  --tile-super: #ffffff;
+
+  --glow-2: 0 0 10px rgba(0, 217, 255, 0.7);
+  --glow-4: 0 0 10px rgba(0, 255, 157, 0.7);
+  --glow-8: 0 0 10px rgba(255, 0, 255, 0.7);
+  --glow-16: 0 0 10px rgba(255, 85, 0, 0.7);
+  --glow-32: 0 0 10px rgba(255, 0, 170, 0.7);
+  --glow-64: 0 0 10px rgba(170, 0, 255, 0.7);
+  --glow-128: 0 0 10px rgba(0, 255, 85, 0.7);
+  --glow-256: 0 0 10px rgba(255, 170, 0, 0.7);
+  --glow-512: 0 0 10px rgba(255, 0, 85, 0.7);
+  --glow-1024: 0 0 10px rgba(85, 0, 255, 0.7);
+  --glow-2048: 0 0 15px rgba(255, 0, 0, 0.8);
+  --glow-super: 0 0 20px rgba(255, 255, 255, 0.9);
+}

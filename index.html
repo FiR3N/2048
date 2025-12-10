@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>2048</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <div class="game">
+          <div class="game__content container">
+            <div class="game__title">
+              <h1 class="game__name">2048</h1>
+              <div class="game__info">
+                <div class="game__score">Score <span id="score">0</span></div>
+                <button class="game__button button" id="restart">
+                  Restart
+                </button>
+              </div>
+            </div>
+            <div class="game__board" id="board">
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+              <div class="game__cell" data-value="0"></div>
+            </div>
+            <div class="game__help">
+              <div class="game__help-content">
+                <div class="game__help-title">CONTROLS</div>
+                <div class="game__help-grid">
+                  <div class="control-item" id="move-up">
+                    <div class="control-key">↑</div>
+                    <div class="control-text">Move Up</div>
+                  </div>
+
+                  <div class="control-item" id="move-left">
+                    <div class="control-key">←</div>
+                    <div class="control-text">Move Left</div>
+                  </div>
+                  <div class="control-item" id="move-down">
+                    <div class="control-key">↓</div>
+                    <div class="control-text">Move Down</div>
+                  </div>
+                  <div class="control-item" id="move-right">
+                    <div class="control-key">→</div>
+                    <div class="control-text">Move Right</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script defer src="./app.js"></script>
+  </body>
+</html>

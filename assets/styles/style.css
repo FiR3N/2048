@@ -1,0 +1,228 @@
+@import "./nullstyle.css";
+@import "./variables.css";
+
+body {
+  font-family: "JetBrains Mono", "Consolas", sans-serif;
+  font-size: 1rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  flex-grow: 1;
+
+  background-color: var(--bg-dark);
+}
+
+.container {
+  width: 500px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 5px 10px;
+
+  color: var(--white-text);
+
+  background-color: var(--red-button);
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.game__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.game__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.game__name {
+  font-size: 4.5rem;
+  font-weight: bold;
+
+  color: var(--white-text);
+}
+
+.game__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.game__score {
+  width: 100%;
+  padding: 5px;
+
+  text-align: center;
+  color: var(--white-text);
+
+  border-radius: 10px;
+  background-color: var(--red-button);
+}
+.game__score span {
+  display: block;
+}
+.game__board {
+  width: 100%;
+  margin-bottom: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+
+  border-radius: 10px;
+  background-color: var(--bg-gray);
+}
+.game__cell {
+  margin: 5px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white-text);
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--border);
+
+  border-radius: 12px;
+}
+.game__cell[data-value="2"] {
+  background-color: var(--tile-2);
+}
+
+.game__cell[data-value="4"] {
+  background-color: var(--tile-4);
+}
+
+.game__cell[data-value="8"] {
+  background-color: var(--tile-8);
+}
+
+.game__cell[data-value="16"] {
+  background-color: var(--tile-16);
+}
+
+.game__cell[data-value="32"] {
+  background-color: var(--tile-32);
+}
+
+.game__cell[data-value="64"] {
+  background-color: var(--tile-64);
+}
+
+.game__cell[data-value="128"] {
+  background-color: var(--tile-128);
+}
+
+.game__cell[data-value="256"] {
+  background-color: var(--tile-256);
+}
+
+.game__cell[data-value="512"] {
+  background-color: var(--tile-512);
+}
+
+.game__cell[data-value="1024"] {
+  background-color: var(--tile-1024);
+}
+
+.game__cell[data-value="2048"] {
+  background-color: var(--tile-2048);
+}
+
+.game__cell[data-value="4096"],
+.game__cell[data-value="8192"],
+.game__cell[data-value="16384"],
+.game__cell[data-value="32768"] {
+  background-color: var(--tile-super);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: var(--red-button-active);
+  }
+}
+
+.game__help {
+  background-color: var(--bg-dark);
+}
+.game__help-content {
+  padding: 15px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.game__help-title {
+  margin-bottom: 15px;
+
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--white-text);
+
+  opacity: 0.7;
+}
+
+.game__help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.control-item {
+  padding: 8px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 6px;
+  border: 1px solid var(--box-sd-dark-blue);
+  background-color: var(--bg-gray);
+}
+
+.control-key {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--white-text);
+
+  border-radius: 5px;
+  box-shadow: 0 0 8px var(--box-sd-dark-blue);
+  background-color: var(--border);
+
+  transition: all 0.1s ease;
+}
+.control-item._active .control-key {
+  background-color: var(--tile-2);
+}
+.control-text {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
