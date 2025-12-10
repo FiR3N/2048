@@ -55,12 +55,3 @@ Open `index.html` in any modern web browser.
 - Chrome, Firefox, Safari, Edge
 - Desktop and tablet friendly
 
-## 🤝 Contributing
-
-Feel free to fork and submit pull requests!
-
----
-
-**Enjoy the game! Can you reach 2048?** 🏁
-
-*Created with ❤️ using vanilla JavaScript*
