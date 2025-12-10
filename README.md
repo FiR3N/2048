@@ -50,8 +50,4 @@ Open `index.html` in any modern web browser.
 2. Open `index.html` in browser
 3. Start playing!
 
-## 📱 Compatibility
-
-- Chrome, Firefox, Safari, Edge
-- Desktop and tablet friendly
 
